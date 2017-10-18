@@ -14,3 +14,9 @@ allprojects {
         maven { url "https://maven.google.com" }
     }
 }
+
+
+ext {
+    versionName = "1.3"
+    versionCode = (int) (((new Date().getTime() / 1000) - 1451606400) / 10)
+}

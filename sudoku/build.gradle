@@ -23,6 +23,8 @@ android {
         applicationId "hram.sudoku"
         minSdkVersion 15
         targetSdkVersion 22
+        versionName rootProject.versionName
+        versionCode rootProject.versionCode
     }
 
     buildTypes {
@@ -34,7 +36,6 @@ android {
 }
 
 dependencies {
-    //compile project(':tesstwo')
     compile 'com.android.support:support-v4:25.4.0'
     androidTestCompile "com.android.support:support-annotations:25.4.0"
     compile files('libs/gson.jar')

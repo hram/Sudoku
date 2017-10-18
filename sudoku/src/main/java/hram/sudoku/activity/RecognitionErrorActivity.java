@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Locale;
 
+import hram.sudoku.BuildConfig;
 import hram.sudoku.Constants;
 import hram.sudoku.R;
 import hram.sudoku.result.Result;
@@ -103,7 +104,7 @@ public class RecognitionErrorActivity extends Activity {
         sb.append(String.format("Result BL: %d,%d\n", res.BL.x, res.BL.y));
         sb.append(String.format("Result BR: %d,%d\n", res.BR.x, res.BR.y));
         sb.append("\n");
-        sb.append("App Version: " + Constants.VERSION + "\n");
+        sb.append("App Version: " + BuildConfig.VERSION_NAME + "\n");
         sb.append("OS Version: " + System.getProperty("os.version") + "(" + android.os.Build.VERSION.INCREMENTAL + ")" + "\n");
         sb.append("OS API Level: " + android.os.Build.VERSION.SDK + "\n");
         sb.append("Device: " + android.os.Build.DEVICE + "\n");

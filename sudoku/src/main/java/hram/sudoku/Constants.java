@@ -1,7 +1,6 @@
 package hram.sudoku;
 
 public abstract class Constants {
-    public static final String VERSION = "1.3";
     public static final String FOUND_RESULTS = "foundResults";
     public static final String FILE_NAME = "fileName";
     public static final String SUDOKU_REGION = "sudokuRegion";

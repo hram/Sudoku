@@ -43,3 +43,4 @@ trash/**
 # Sonar
 .sonar/**
 sonar-project.properties
+/fabric.properties

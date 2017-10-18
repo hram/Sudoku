@@ -41,7 +41,7 @@ public class TessAPI {
         // You can get them at:
         // http://code.google.com/p/tesseract-ocr/downloads/list
         // This area needs work and optimization
-        if (file.exists() == false) {
+        if (!file.exists()) {
             try {
 
                 AssetManager assetManager = context.getAssets();
