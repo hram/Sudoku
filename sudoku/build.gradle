@@ -1,0 +1,45 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        applicationId "hram.sudoku"
+        minSdkVersion 15
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    //compile project(':tesstwo')
+    compile 'com.android.support:support-v4:25.4.0'
+    androidTestCompile "com.android.support:support-annotations:25.4.0"
+    compile files('libs/gson.jar')
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.0@aar') {
+        transitive = true;
+    }
+    compile 'com.rmtheis:tess-two:8.0.0'
+}

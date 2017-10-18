@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, SudokuActivity!</string>
+    <string name="app_name">Судока</string>
+    <string name="msg_default_status">Пожалуйста поместите судоку внутрь окна поиска.</string>
+    <string name="msg_camera_framework_bug">Очень жаль, но при работе с камерой возникла ошибка. Попробуйте перезапустить устройство.</string>
+    <string name="button_ok">OK</string>
+    <string name="btCapture">Открыть камеру</string>
+    <string name="btResume">Продолжить игру</string>
+    <string name="btGallery">Открыть архив</string>
+    <string name="btOpenGame">Открыть игру</string>
+    <string name="btSolve">Решить</string>
+    <string name="btPlay">Играть</string>
+    <string name="dimention">none-ru</string>
+    <string name="msg_process_image">Обработка изображения</string>
+	<string name="close">Закрыть</string>
+    <string name="clear">Очистить</string>
+    <string name="save">Сохранить</string>
+	<string name="select_number">Выберите номер</string>
+	<string name="edit_note">Редактирование заметки</string>
+    <string name="add_folder">Добавить папку</string>
+	<string name="import_file">Импортировать</string>
+    <string name="import_file_title">Импортировать фпйл %s</string>
+    <string name="about">О программе</string>
+	<string name="rename_folder">Переименовать папку</string>
+    <string name="delete_folder">Удалить папку</string>
+    <string name="rename_folder_title">Переименовать %s</string>
+    <string name="delete_folder_title">Удалить %s</string>
+    <string name="delete_folder_confirm">Вы уверены что хотите удалить папку?</string>
+    <string name="no_puzzles">Нет судоку</string>
+    <string name="one_puzzle">1 судоку</string>
+    <string name="n_puzzles">%s судоку</string>
+    <string name="all_solved">все решенные</string>
+    <string name="n_solved">%s решенных</string>
+    <string name="n_unsolved">%s не решенных</string>
+    <string name="n_playing">%s в игре</string>
+    <string name="solved">Решенные</string>
+    <string name="playing">В игре</string>
+    <string name="not_started">Не решались</string>
+    <string name="last_played_at">Последний запущенный %s</string>
+    <string name="created_at">Созданный %s</string>
+	<string name="at_time">за %s</string>
+    <string name="yesterday_at_time">вчера за %s</string>
+    <string name="on_date">за %s</string>
+	<string name="add_sudoku">Добавить судоку</string>
+    <string name="filter">Фильтр</string>
+    <string name="filter_by_gamestate">Фильтровать по состоянию</string>
+    <string name="folders">Папки</string>
+    <string name="delete_puzzle_confirm">Вы уверены, что хотите удалить выбранный судоку?</string>
+    <string name="reset_puzzle_confirm">Вы уверены, что хотите сбросить выбранный судоку?</string>
+    <string name="play_puzzle">Играть этот судоку</string>
+    <string name="reset_puzzle">Сбросить игру</string>
+    <string name="edit_puzzle">Редактировать судоку</string>
+    <string name="delete_puzzle">Удалить судоку</string>
+    <string name="filter_active">Отфильтровано: %s</string>
+    <string name="undo">Назад</string>
+    <string name="clear_all_notes">Очистить все пометки</string>
+    <string name="fill_in_notes">Добавить пометку</string>
+    <string name="restart">Начать с начала</string>
+    <string name="congrats">Поздравляю Вы решили судоку за %s.</string>
+    <string name="restart_confirm">Вы уверены, что хотите начать с начала?</string>
+    <string name="well_done">Хорошая работа!</string>
+	<string name="clear_all_notes_confirm">Вы уверены что хотите очистить все пометки?</string>
+    <string name="settings">Настройки</string>
+    <string name="game_settings">Настройки игры</string>
+    <string name="game_helpers">Подсказки</string>
+    <string name="highlight_wrong_values">Помечать ошибки</string>
+    <string name="highlight_wrong_values_summary">Помечать ячейки которые нарушают правила игры.</string>
+    <string name="input_methods">Режимы ввода</string>
+    <string name="popup">Всплывающая</string>
+    <string name="popup_summary">Режим в вода через всплывающее окно.</string>
+    <string name="single_number">Один номер</string>
+    <string name="single_number_summary">Выберите номер, затем нажимайте на ячейки чтобы установить его или добавить заметку.</string>
+    <string name="numpad">Клавиатура</string>
+    <string name="numpad_summary">Режим стандартной клавиатуры. Выбираете ячейку, затем на клавиатуре номер.</string>
+    <string name="numpad_move_right">Сдвигать вправо</string>
+    <string name="numpad_move_right_summary">После ввода выделять следующую ячейку справа.</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="hint">Подсказки</string>
+    <string name="help">Помощь</string>
+    <string name="that_is_all">Это все</string>
+    <string name="first_run_hint">В игре предусмотрено несколько режимов ввода цифр. Чтобы ознакомиться с ними Вам отобразятся подсказки по мере их выбора.\n\nВы можете отключить их в настройках.\n</string>
+    <string name="im_single_number_hint">Вы играете в режиме ввода <i>Одной цифры</i>. Сначала выберите нужную цифру на клавиатуре. Затем выберите ячейки в которых должна быть выбранная цифра.</string>
+    <string name="im_numpad_hint">Вы играете в режиме <i>Клавиатуры</i>. Поведение кнопок как у обычной клавиатуры. Выберите ячейку и введите цифру.\n</string>
+    <string name="im_disable_modes_hint">Вы можете отключить режимы ввода в настройках программы.</string>
+    <string name="game">Игра</string>
+    <string name="show_hints">Подсказки при первом запуске</string>
+	<string name="show_hints_summary">Показывать подсказки которые помогут Вам быстрей освоить программу.</string>
+    <string name="show_time">Показывать время</string>
+    <string name="show_time_summary">Отображать время в время игры.</string>
+    <string name="puzzle_inserted">Новая игра была создана.</string>
+    <string name="puzzle_updated">Игра обновлена.</string>
+    <string name="puzzles_saved">Игра была сохранена в папку \'%s\'.</string>
+    <string name="no_puzzles_found">Судоку не найдены.</string>
+    <string name="unknown_import_error">Неизвестная ошибка во время импорта игры, импорт был отменен.</string>
+    <string name="invalid_format">Неверный формат, импорт отменен.</string>
+    <!-- Strings added in 0.7.0 -->
+    <string name="loading">Загрузка&#8230;</string>
+    <!-- Strings added/changed in 0.7.1 -->
+    <string name="more_settings">Больше настроек</string>
+    <string name="screen_border_size">Размер отступа от края экрана</string>
+    <string name="screen_border_size_summary">Некоторые экраны не реагируют на прикосновения на краях. Это может помочь.</string>
+    <string name="highlight_touched_cell">Подсвечивать ячейку при прикосновении</string>
+    <string name="highlight_touched_cell_summary">Подсвечивать строки и столбцы при клике на ячейку.</string>
+    <string name="export">Экспорт</string>
+    <string name="export_folder">Экспртировать папку</string>
+    <string name="export_all_folders">Экспортировать все папки</string>
+    <string name="folders_created">Было импортировано %s папок.</string>
+    <string name="importing">Импорт&#8230;</string>
+    <string name="exporting">Экспорт&#8230;</string>
+    <string name="unknown_export_error">Неизвестная ошибка экспорта.</string>
+    <string name="highlight_completed_values">Помечать израсходованные номера</string>
+    <string name="highlight_completed_values_summary">Помечать номера которые были введены 9 раз.</string>
+    <string name="save_to_sdcard">Сохранить на SD карту</string>
+    <string name="send_by_mail">Отправить по почте</string>
+    <string name="theme">Тема</string>
+    <string name="theme_summary">Выберите оформление игрового поля.</string>
+    <string name="select_theme">Выберите тему</string>
+    <string name="filename">Имя файла</string>
+    <string name="directory">Папка</string>
+    <string name="sdcard_not_found">SD карта не найдена.</string>
+    <string name="puzzles_have_been_exported">Игра была экспортирована в %s.</string>
+    <string name="file_exists">Файл уже существует, заменить?</string>
+    <!-- localization of default folder names -->
+    <string name="difficulty_hard">Сложно</string>
+    <string name="difficulty_medium">Так себе</string>
+    <string name="difficulty_easy">Легко</string>
+    <!-- Strings added/changed in 1.1.0 -->
+    <string name="generate_sudoku">Создать новую игру</string>
+    <string name="select_difficulty">Выбрать сложность</string>
+    <string name="generating">Создание игры&#8230;</string>
+    <string name="show_number_totals">Показывать использования</string>
+    <string name="show_number_totals_summary">Показывать сколько раз был использован номер.</string>
+    <string name="what_is_new">Что нового</string>
+    <string-array name="menuTitles">
+        <item>Имитация захвата</item>
+        <item>Играть</item>
+        <item>Захват с камеры</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Тест распознавания</item>
+        <item>Тест ориентации</item>
+    </string-array>
+    <string name="drawer_open">Открыть панель навигации</string>
+    <string name="drawer_close">Закрыть панель навигации</string>
+    <string name="btTestTess">Тест распознавания</string>
+	<string name="button_play">Играть</string>
+	<string name="button_solve">Решить</string>
+</resources>

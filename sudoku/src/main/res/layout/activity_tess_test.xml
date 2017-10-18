@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <hram.sudoku.view.HorizontalListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/btToRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Button"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btToLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Button"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btGetCells"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Найти цифры"
+        tools:ignore="HardcodedText" />
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="5" >
+    </GridView>
+
+</LinearLayout>
