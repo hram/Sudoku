@@ -147,4 +147,11 @@
     <string name="btTestTess">Тест распознавания</string>
 	<string name="button_play">Играть</string>
 	<string name="button_solve">Решить</string>
+    <string name="ooops">Ooops! Что-то пошло не так...</string>
+    <string name="sent_email">Сообщить</string>
+    <string name="try_again">Повторить</string>
+    <string name="whats_happened">Повторить</string>
+    <string name="whats_happened_exp">Очень жаль, но во время распознавания некоторые цифры были распознаны не верно. В итоге получившаяся судоку содержит ошибки и не может быть решена.</string>
+    <string name="whats_next">Что делать дальше:</string>
+    <string name="whats_next_exp">1. Попробуйте еще раз. Для этого нажмите кнопку Повторить. Очень надеюсь, что со второго раза у Вас получится. Попробуйте поменять освещенность или положение камеры.\n\n2. Если ошибка повторяется несколоко раз то я буду очень признателен если Вы сообщите об ошибке мне. Для этого нажмите на кнопку Сообщить. В тело письма будет помещена картинка и отладочная информация.</string>
 </resources>

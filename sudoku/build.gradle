@@ -9,11 +9,22 @@ buildscript {
 }
 apply plugin: 'com.android.application'
 apply plugin: 'io.fabric'
+apply plugin: 'com.github.triplet.play'
 
 repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
 
+def getProps(String propName) {
+    def propsFile = rootProject.file('local.properties')
+    if (propsFile.exists()) {
+        def props = new Properties()
+        props.load(new FileInputStream(propsFile))
+        return props[propName] != null ? props[propName] : "\"define config field: " + propName + "\""
+    } else {
+        return "\"define config file local.properties\"";
+    }
+}
 
 android {
     compileSdkVersion 25
@@ -27,10 +38,24 @@ android {
         versionCode rootProject.versionCode
     }
 
+    signingConfigs {
+        debug {
+            storeFile file('debug.jks')
+        }
+
+        release {
+            storeFile file(getProps("KEYSTORE"))
+            storePassword getProps("STOREPASS")
+            keyAlias getProps("KEYALIAS")
+            keyPassword getProps("KEYPASS")
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
         }
     }
 }
@@ -43,4 +68,10 @@ dependencies {
         transitive = true;
     }
     compile 'com.rmtheis:tess-two:8.0.0'
+}
+
+play {
+    track = 'alpha'
+    serviceAccountEmail = getProps("SERVICE_ACCOUNT_EMAIL")
+    pk12File = file(getProps("PK_12_FILE"))
 }
