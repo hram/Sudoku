@@ -18,6 +18,10 @@ allprojects {
 
 
 ext {
-    versionName = System.getProperty("build.number")
+    if (rootProject.hasProperty('teamcity')) {
+        versionName = teamcity["build.number"]
+    } else {
+        versionName = "N/A"
+    }
     versionCode = (int) (((new Date().getTime() / 1000) - 1451606400) / 10)
 }
