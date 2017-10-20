@@ -18,6 +18,6 @@ allprojects {
 
 
 ext {
-    versionName = "1.3"
+    versionName = System.getProperty("build.number")
     versionCode = (int) (((new Date().getTime() / 1000) - 1451606400) / 10)
 }
